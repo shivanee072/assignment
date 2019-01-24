@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(confirm('Do you want to convert temperature from celsius to fahrenheit'))
+        {
+            var cel = parseInt(prompt('Enter temperature in celsius ',0));
+            function tempConversion(cel)
+        {
+            var far = ((cel*9)/5)+32 ;
+            document.write("temperature in fahrenheit is "+far)
+        }
+        tempConversion(cel);
+        }
+       else {
+        var far = parseInt(prompt('Enter temperature in fahrenheit',275))
+        function tempConversion1(far)
+        {
+          var cel = ((far-32)*5)/9;
+          document.write("temperature in celsius is "+cel)
+
+        }
+        tempConversion1(far);
+       }
+        </script>
+       
+</body>
+</html>

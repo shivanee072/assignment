@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <select>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            </select>
+              <br/>
+              <button onclick = 'drop()'>click</button>
+            </div>
+            <script>
+               
+                function drop(){
+                    var a =  document.getElementsByTagName('option')
+                    console.log(a)
+                    var obj = new Object()
+                       //function p()
+                       
+                       for(var i = 0;i<a.length;i++)
+                       obj[i] =  document.getElementsByTagName('option')[i].getAttribute('value')
+                       var str="";
+                       //console.log(obj.length);
+                       for(var i=0;i<a.length;i++){
+                           console.log("hi");
+                        str += " "+obj[i]+" ";
+                       }
+                       
+
+                       console.log(str);
+                       
+                    
+                    alert(a.length-1)
+                }
+
+            </script>
+ 
+
+              <script>
+              </script>
+</body>
+</html>

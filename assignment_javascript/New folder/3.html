@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var in1 = prompt("Enter a string");
+        function findWord(in1)
+        {
+        var prev = 0;
+        var cur_len = 0;
+        for(var i = 0;i<in1.length;i++)
+        {
+            
+            if(in1[i] != ' ')
+            {
+              cur_len++;
+            }
+            else 
+            {
+               prev = comp(cur_len,prev)
+               cur_len = 0;
+            }
+        }
+        document.write("longest word is "+prev);
+    }
+        findWord(in1)
+        function comp(cur,pre)
+        {
+          if(cur >= pre)
+          {
+          return cur;
+          }
+          else 
+          {
+              return pre;
+          }
+        
+        }
+        
+        </script>
+</body>
+</html>

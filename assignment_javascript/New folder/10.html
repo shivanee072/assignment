@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="padding:30px;">
+        <button>
+        <img src='download.jpg' style="width: 100px; height: 100px;"></img>
+        </button>
+        </div>
+        <script>
+        function $(ele)
+        {
+            return document.getElementsByTagName(ele)
+        }
+        $('button')[0].addEventListener('click',function(){
+            alert("you clicked button")
+        },false)
+        $('img')[0].addEventListener('click',function(){
+            alert('You clicked image')
+        },false)
+        </script>
+</body>
+</html>

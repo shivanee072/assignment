@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            </style>
+</head>
+<body>
+    <table style="width:70%">
+        <tr id = "header_row">
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td> 
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td> 
+          <td>94</td>
+        </tr>
+        <tr>
+                <td>Ana</td>
+                <td>Pattrick</td> 
+                <td>84</td>
+              </tr>
+      </table>
+      <script>
+          var row = document.getElementsByTagName('tr')
+          for(var i =0;i<row.length;i++)
+          {
+              if(i%2==0)
+          document.getElementsByTagName('tr')[i].style.backgroundColor = "olive"
+          else
+          document.getElementsByTagName('tr')[i].style.backgroundColor = "peach"
+          }
+    
+
+
+
+          for(var k = 0;k<row.length;k++){
+              var col = row[k].getElementsByTagName('td')
+          for(var i =0;i<col.length;i++)
+          {
+            
+              if(i==0)
+                col[i].style.textDecoration = "underline"
+                
+              
+              var col = row[k].getElementsByTagName('td')
+              if(i%2==0)
+          row[k].getElementsByTagName('td')[i].style.color = "pink"
+          else
+          row[k].getElementsByTagName('td')[i].style.color = "blue"
+          }
+          if(k==(row.length-1))
+          {
+              col = row[k].getElementsByTagName('td')
+              console.log(col)
+              for(var i = 0;i<col.length;i++)
+              {
+                 col[i].style.fontStyle = 'italic'
+              }
+              
+          }
+          }
+          
+          
+          
+
+          
+      </script>
+</body>
+</html>

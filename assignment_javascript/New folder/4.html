@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bank = [];
+       bank[0] = { name : "JOHN",account:'Savings',account_status:'Blocked'};
+       bank[1] =  {name:'KATE',account:'current',account_status:'Active'};
+       bank[2] = {name:'MIKE',account:'Savings',account_status:'Active'};
+       var check = 0;
+       var in1 = prompt("Enter name",'JOHN') ;
+       for(var i = 0;i<bank.length;i++)
+       {
+       if(bank[i].name == in1)
+       {
+           document.write(bank[i].name+'<br\>'+bank[i].account)
+           check++ ;
+       if(bank[i].account_status == 'Blocked')
+       {
+           
+           alert('You need to activate your account.')
+       }
+       else
+       {
+           alert('Account is activated.')
+       }
+       break;
+    }
+    }
+    if(check == 0)
+    alert('Wrong name')
+    
+        </script>
+</body>
+</html>

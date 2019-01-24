@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   function Person(name,location){
+       this.name =name
+       this.location = location
+   }
+   Person.prototype.eat = function()
+   {
+       document.write('I like sea food <br/>')
+   }
+   Person.prototype.introduction = function()
+   {
+       document.write('My name is '+this.name+'<br/>')
+   }
+   var p = new Person('ram','nagpur')
+   //p.eat()
+   //p.introduction()
+   var p1 = new Person('raj','nagpur')
+   //p1.eat()
+   //p1.introduction()
+
+
+
+   Devloper.prototype = new Person('default','default')
+   Devloper.prototype.constructor = Person
+
+   function Devloper(nm,loc,projects)
+   {
+   Person.call(this,nm,loc)
+   
+   this.name = nm
+   this.location = loc
+   this.projects = projects
+   }
+   Devloper.prototype.takeLeave = function()
+   {
+       document.write('I am on leave next week')
+   }
+   Devloper.prototype.introduction =  function()
+   {
+       document.write('My name is '+this.name+' , I am from '+this.location+' and I am allocated in - '+this.projects )
+   }
+   var p2 = new Devloper('riya','nagpur',['java','meanstack'])
+   //p2.eat()
+   //p2.introduction()
+   function letMeIntroduce(obj)
+   {
+        obj.introduction()
+   }
+     document.write('<br/>')
+     letMeIntroduce(p1)
+     document.write('<br/>')
+     letMeIntroduce(p2)
+   
+    </script>
+</body>
+</html>

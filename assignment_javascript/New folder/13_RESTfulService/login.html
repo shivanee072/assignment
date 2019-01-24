@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Name:    <input type="text" name="name"><br>
+    Password:<input type="text" name="pwd" ><br>
+    <button>login</button>
+    <script>
+        var name1 = " "
+        var pwd1 = " "
+    document.getElementsByTagName('input')[0].addEventListener('change',function(){
+        name = document.getElementsByTagName('input')[0].value
+        console.log(name)
+    })
+    document.getElementsByTagName('input')[1].addEventListener('change',function(){
+        pwd = document.getElementsByTagName('input')[1].value
+        console.log(pwd)
+    })
+    document.getElementsByTagName('button')[0].addEventListener('click',function(){
+        var xmlHttp = new XMLHttpRequest()
+        var url = "http://localhost:9876/login";
+        xmlHttp.open("POST",url,true)
+        xmlHttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200)
+            {
+                var response = xmlHttp.responseText;
+                alert(response)
+            }
+        }
+        xmlHttp.setRequestHeader('Content-type',"application/json;charset=UTF-8");
+        xmlHttp.send(JSON.stringify({
+            name:name1,
+            pwd:pwd1
+        }));
+    })
+    
+    </script>
+</body>
+</html>
