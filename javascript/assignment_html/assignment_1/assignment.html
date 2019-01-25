@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>Regsitration Form</header>
+    <form>
+     FIRST NAME<br><input type="text" placeholder="Enter your first name" required><br>
+     LAST NAME<br><input type="text" placeholder="Enter your last name" required><br>
+     BIRTH DATE<br><input="date" required><br>
+     GENDER<br><input type="text" list="list" required><br>
+     <datalist id="list">
+     <option>Male</option>
+     <option>Female</option>
+     <option>Others</option>    
+     </datalist><br>
+     Email<br><input type="email" palceholder="Example@domain.com" required>
+     <fieldset><legend>Address</legend><br>
+        Street Address<br><input type="text"><br>
+        Street Address Line 2<br><input type="text"><br>
+        city<br><input type="text"><br>
+        state<br><input type="text"><br>
+        zip code<br><input type="text" pattern="[a-zA-Z]{2}[0-9]{4}"><br>
+        country<br><input type="text"><br>
+     </fieldset>   
+     </form>
+</body>
+</html>

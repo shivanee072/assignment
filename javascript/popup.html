@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popup</title>
+    <link rel  = "stylesheet" href = "./mystylesheet.css"/>
+    <script src = "./mymath.js"></script>
+</head>
+<body>
+    
+ <b>Addition is <span id = 'addSpan'></span></b><br/>
+    <script>
+        //function add(x,y)
+        //{
+          //  alert('Inside add')
+            //return x+y;
+       // }
+       var no1 = parseInt(prompt('please enter no1',10))
+       var no2 = parseInt(prompt('please enter no2',20))
+    var result = add(no1,no2);
+    document.getElementById("addSpan").innerHTML = result;
+    if(confirm('Do you want to continue'))
+    {
+        alert('ok');
+    }
+    else 
+    {
+        alert('thank you')
+    }
+    var cars = ['audi' , 'ferrari'];
+for(var i=0;i<cars.length;i++)
+{
+    console.log(cars[i])
+}
+    </script>
+
+</body>
+</html>

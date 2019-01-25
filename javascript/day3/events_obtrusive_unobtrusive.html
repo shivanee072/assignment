@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Obtrusive -->
+    <div id = 'div1'></div>
+    <!--    <button onclick = "getElementById('div1').innerHTML = Date()">Date & time</button>    -->
+    <button id = 'btnDateTime'>Date &Time</button>
+    <script>
+    // var dv = document.getElementById()
+    function $(id){
+        return document.getElementById(id)
+    }
+    function getDateTime(){
+        var dv = $('div1');
+        dv.innerHTML = Date() 
+    }
+    var btn = $('btnDateTime')
+    btn.onclick = getDateTime // to the onclick we are assigning the event getDateTime and not calling it so no need of ()
+     </script>
+</body>
+</html>

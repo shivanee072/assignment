@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'div1'>
+    <p id = 'para1'>this is paragraph</p>
+     </div><br/>
+    <div id = 'div2'></div>
+    <p id = 'para2'>this is paragraph</p>
+    
+    <script>
+        function $(id){
+            return document.getElementById(id)
+        }
+        $('div1').addEventListener('click',function(){
+            alert('you clicked div1')
+            
+        })
+        $('para1').addEventListener('click',function(){
+            alert("you clicked para1")
+            //e.stopPropagation()
+        })
+        $('div2').addEventListener('click',function(){
+            alert('you clicked div1')
+            
+        })
+        $('para2').addEventListener('click',function(){
+            alert("you clicked para1")
+            //e.stopPropagation()
+        })
+        
+
+    </script>
+</body>
+</html>

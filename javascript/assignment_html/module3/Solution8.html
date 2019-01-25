@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #static{
+            background-color: peachpuff;
+            height:300px;
+            width:300px;
+        }
+        #relative{
+            position:relative;
+            left:300px;
+            background-color: yellow;
+            height:300px;
+            width:300px;
+            overflow: hidden;
+        }
+        #absolute{
+            position:absolute;
+            left:100px;
+            background-color: blue;
+            height:300px;
+            width:300px;
+        }
+        #fixed{
+            position: fixed;
+            background-color: green;
+            right:0;
+            height:300px;
+            width:300px
+        }
+</style>
+</head>
+<body>
+    <div id="static">This div element has position static</div>
+    <div id="relative">This div element has position relative
+        <div id ="absolute">This div element has position absolute </div>
+    </div>
+    <div id ="fixed">This div element has position fixed</div>
+
+</body>
+</html>

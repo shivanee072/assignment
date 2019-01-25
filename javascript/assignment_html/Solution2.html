@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box
+        }
+        body{
+            width:100%
+        }
+        #box{
+            float: left;
+            width:33.33%;
+            padding:50px;
+            heigth:100%;
+            background-color:lightgrey;
+        }
+        #box1{
+            width:100%;
+            height:50%;
+            padding:50px;
+            margin-bottom:5px;
+            background-color: lightgrey
+        }
+        .clearfix{
+            content:" ";
+            clear: both;
+            display:table;
+            width:100%;
+            overflow: hidden
+        }
+        #head{
+            background-color: blue;
+            height:75%;
+            padding-left: 40%;
+            padding-top: 40px;
+            padding-bottom:40px
+        }
+        li{
+            display: inline;
+            font-size: x-large
+        }
+        a:link{
+            text-decoration: none;
+            color:black
+        }
+        #nav_bar{
+            padding-left:10px;
+            word-spacing: 40px;
+            background-color: gray;
+            padding: 20px;
+        }
+        footer{
+            background-color: gray;
+        }
+        h3{
+            padding-left:400px
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <h1>Company Name</h1>
+    </div>
+    <div id="nav_bar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="More.html">More</a></li>
+        </ul>
+        </div>
+        <div class="clearfix" style="height:100%">
+            <div id = "box" class="box" style="background-color:lightgrey">
+                <h2>Company News</h2>
+                <p>Some Text Here..</p>
+            </div>
+            <div id = "box" class="box" style="background-color:white">
+                    <h2>Featured Content</h2>
+                    <p>Features of this template..</p>
+            </div>
+            <div id = "box" class="box" style="background-color:white;padding:0%;height:200.81px">
+                    <div id = "box1" class="box" style="border:0%" >Latest Events</div>
+                    <div id = "box1" class="box" style="margin-bottom:0%" >Website AddOns</div>
+            </div>
+            
+        </div>
+        <footer><h3>copyright &copy; www.copmanyname.com-All Rights Reserved</h3></footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .paraVerdana{
+            font-family:Verdana;
+        }
+        .paraTimes{
+            font-family: 'Times New Roman';
+        }
+        /* By specifying font-size-adjust property, browser will
+        adjust the font size to be the same regardless of
+        the font family*/
+        #para1{
+            font-size-adjust: 0.5;
+        }
+        #para2{
+            font-size-adjust: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>only in firefox!</h1>
+    <p id='para1' class="paraVerdana">This is simple paragraph with Verdana!</p>
+    <p id='para2' class="paraTimes">This is simple paragraph with Times New Roman!</p>
+    <br/>
+    <p class="paraVerdana">This is simple paragraph with Verdana!</p>
+    <p class="paraTimes">This is simple paragraph with Times New Roman!</p>
+</body>
+</html>

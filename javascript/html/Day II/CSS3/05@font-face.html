@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 
+            @font-face rule allows custom fonts to be loaded
+            on a webpage. Once added to the stylesheet, the rule
+            instructs the browser to download the font from where
+            it is hosted, then display it as specified in the css.
+            Without the rule, our desgins are limited to the fonts
+            those are already loaded on user's computer, which
+            vary depending on the system being used.
+         */
+        /* 
+            eot - Embedded Open Type
+            woff - Web Open Font Format
+            ttf - Open Type Font and True Type Font
+            svg - Scalable Vector Graphics
+          */
+        @font-face {
+            font-family: "kingthings_gothiqueregular";
+            src:
+                url('./kingthings/Kingthings_Gothique-webfont.eot?#iefix') format('embedded-opentype'),
+                url('./kingthings/Kingthings_Gothique-webfont.woff') format('woff'),
+                url('./kingthings/Kingthings_Gothique-webfont.ttf') format('truetype'),
+                url('./kingthings/Kingthings_Gothique-webfont.svg#kingthings_gothiqueregular') format('svg');
+        }
+        h2{
+            font-family: kingthings_gothiqueregular;
+            border: 2px solid maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>No Web-safe Fonts!</h2>
+</body>
+
+</html>

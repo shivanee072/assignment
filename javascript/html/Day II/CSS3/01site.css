@@ -1,0 +1,82 @@
+/* tag selector */
+div{
+    background-color: peachpuff;
+}
+/* id selector */
+#list1{
+    font-style: italic;
+    font-size: x-large;
+}
+/* class selector */
+.a{
+    color:red;
+}
+.b{color:green;}
+
+/* try out different css3 selectors from w3cshools.com */
+
+/* every div preceded by p */
+/* p ~ div{
+    background-color: palegreen;
+    height:200px;
+} */
+
+/* select all p those are places immediately after div */
+/* div + p {
+    background:  orange;
+} */
+
+/* all div and all p elements */
+/* div, p {
+    background: navy;
+} */
+
+/* Pseudo Class - A pseudo class is used to define
+    special state of an element*/
+
+/* p:first-of-type{
+    background: yellow;
+}
+p:last-of-type{
+    background: green;
+}
+
+div:hover{
+    background: purple;
+}
+
+ul:only-of-type{
+    background: skyblue;
+}
+
+a:link{color:red;}
+a:hover{color:darkgray;}
+a:active{color:yellow;} */
+/* a:visited{color:green;} */
+
+/* Pseudo Elements - A pseudo element is used to 
+    style specified part of the html element.*/
+
+p::first-letter{
+    font-size: 300%;
+    float: left;
+}
+
+p::first-line{
+    color:red;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+h1::before{
+    content:url('./images/smiley.jpg');
+}
+
+h1::after{
+    content:url('./images/smiley.jpg');
+}
+
+::selection{
+    color:yellow;
+    background: green;
+}

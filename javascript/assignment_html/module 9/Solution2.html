@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="down.jpg">
+    <audio src="guitar.mp3" type="audio/mp3">
+    </audio><br>
+    <button>Play/Pause</button>
+    <button>vol+</button>
+    <button>vol-</button>
+    <script>
+     document.getElementsByTagName('button')[0].addEventListener('click',function(){
+         if(document.getElementsByTagName("audio")[0].paused)
+         document.getElementsByTagName("audio")[0].play()
+         else
+         document.getElementsByTagName("audio")[0].pause()
+     })
+     var vol = document.getElementsByTagName('audio')[0].volume
+    //  vol = 0
+     document.getElementsByTagName('button')[1].addEventListener('click',function(){
+         vol = Number(vol);
+         if(vol<1)
+         {
+         vol += 0.1
+         console.log(vol)
+        vol = Number(vol.toPrecision(2))
+        document.getElementsByTagName('audio')[0].volume = vol
+        
+     }})
+     document.getElementsByTagName('button')[2].addEventListener('click',function(){
+       // var vol = document.getElementsByTagName('audio')[0].volume 
+       if(vol>0)
+       {
+         vol -= 0.1
+         vol = vol.toPrecision(2)
+         document.getElementsByTagName('audio')[0].volume = vol
+         console.log(vol)
+     }})
+    </script>
+</body>
+</html>

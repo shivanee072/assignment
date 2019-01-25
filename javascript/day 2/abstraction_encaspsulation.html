@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Person()
+    {
+        this.id = 100;
+        var name = 'default'
+        this.hobbies = ['music']
+         //private method
+         var privateMethod = function()
+         {
+             console.log('private method')
+         }
+         //public method
+        this.getInfo = function()
+        {
+            privateMethod()
+           return this.id+' '+name
+           
+        }
+        this.display = function()
+        {
+            console.log(this.id+' '+name+' '+this.hobbies)
+        }
+    }
+    var obj1 = new Person()
+    var obj2 = new Person()
+    obj1.hobbies.push('Sing')
+    obj1.getInfo()
+    obj1.display()
+    
+    obj2.getInfo()
+    obj2.display()
+    
+    //obj1.hobbies.push('Singing')
+   // obj1.privateMethod()
+    </script>
+</body>
+</html>

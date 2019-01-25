@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    fieldset
+    {
+        height:120%;
+        font-size:135%;
+    }
+    #Card-details{
+        height:100%;
+        font-size:100%
+    }
+    footer{
+        font-size: 200%;
+        font:bold;
+    }
+    button{
+        padding:5px;
+
+    }
+</style>
+<body>
+<footer>Place your Order</footer>
+<fieldset>
+    <legend>Personal details</legend>
+    <form>
+        First Name<br><input type="text" placeholder="First name only"><br>
+        Last Name<br><input type="text" placeholder="Last name only"><br>        
+        Email<br><input type="email" placeholder="example@domain.com"><br>
+        Telephone<br><input type="tel" placeholder="Eg,447000 00000"><br>
+        Shoesize<br><input type="text" list="list"><br>
+        <datalist id="list">
+        <option>10</option>
+        <option>5</option>
+        <option>6</option>    
+        </datalist> 
+    </form>
+</fieldset>
+<fieldset>
+    <legend>Biling Adresss</legend>
+    Address<input type="text" style="height:50px"><br>
+    Post Code<br><input type="text"><br>
+    Country<br><input type="text"><br>
+</fieldset>
+<fieldset>
+    <legend>Card details</legend>
+    <fieldset id="Card-details">
+        <legend>Card type</legend>
+        <input type="radio">VISA
+        <input type="radio">Mastercard
+        <input type="radio">AMEX
+    </fieldset>
+    Name<input type="text" placeholder="Name as it appears on your card"><br>
+    Card number<input type="number" maxlength="10"><br>
+    Security code<input type="number" maxlength="3"><br>
+    Expiry Date<input type="date">
+</fieldset>
+<fieldset>
+    <button type="submit">Place Order</button>
+</fieldset>
+</body>
+</html>

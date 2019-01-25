@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getArgs(){
+            document.write('<br/>inside getArgs')
+            for(var i in arguments)
+            {
+              document.write('</br>'+arguments[i])
+            }
+            document.write('<br/>')
+        }
+        function getArgs(x,y,z){
+            document.write('<br/>inside getArgs x,y,z')
+            for(var i in arguments)
+            {
+                document.write('</br>'+arguments[i])
+            }
+            document.write('<br/>')
+        }
+        
+        getArgs();
+        getArgs(11,22,333);
+        getArgs(11.55,'abcd');
+        </script>
+    
+</body>
+</html>

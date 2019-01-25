@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        header{
+         font-size: 200%;
+         padding-left:50px   
+        }
+    </style>
+</head>
+
+<body>
+    <header>Welcome User!!!</header>
+    <input type="text" list="list">
+    <ul id="list" >
+        <li onclick="add(this.innerHTML)">Item1</li>
+        <li onclick="add(this.innerHTML)">Item2</li>
+        <li onclick="add(this.innerHTML)">Item3</li>
+        <li onclick="add(this.innerHTML)">Item4</li>
+        <li onclick="add(this.innerHTML)">Item5</li>
+        <li onclick="add(this.innerHTML)">Item6</li>
+        <li onclick="add(this.innerHTML)">Item7</li>
+    </ul>
+    <div id="display"><p>You selected :</p></div>
+    <button type="submit" onclick="clear1()">Sign Out</button>
+</body>
+<script>
+        var arr = document.getElementsByTagName("li");
+       
+    if(typeof(Storage)!=="undefined"){
+      for(var i=0; i<arr.length;i++)
+      {
+
+       localStorage.setItem(i,arr[i].innerHTML)
+       console.log(localStorage.getItem(i))
+    }
+    }
+    var count = 0;
+     function add(val)
+     {
+         
+         if(typeof(Storage)!= undefined)
+         {
+             sessionStorage.setItem(count,val)
+            //  var p = document.createElement("p")
+            //  var t = document.createTextNode(sessionStorage.getItem(count));
+            //  p.appendChild(t);
+            //  count++;
+            //  document.getElementsByTagName("div")[0].appendChild(p);
+
+            document.getElementById("display").innerHTML += sessionStorage.getItem(count) + "<br>" 
+            count++;
+
+         }
+     }
+     function clear1()
+     {
+         
+         sessionStorage.clear();
+     }
+    </script>
+</html>

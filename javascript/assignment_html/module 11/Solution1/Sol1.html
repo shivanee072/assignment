@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>Contact Us</header>
+    <input type="text" placeholder="Name"><br>
+    <input type="text" placeholder="Adress"><br>
+    <input type="text" placeholder="Contact"><br>
+    <button type="submit">Submit</button>
+    <script>
+           document.body.innerHTML += navigator.geolocation.getCurrentPosition(getPosition);
+        
+        function getPosition(position){
+            return position.coords.latitude+" "+position.coords.longitude;
+        }
+     </script>
+</body>
+</html>
