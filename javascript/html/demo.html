@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+   
+    
+    fieldset{
+        
+        /* top:500px; */
+        /* position: absolute;
+        top:283px */
+        overflow:scroll;
+        font-size: 150%;
+    }
+    .header_img{
+        /* position:inherit; */
+        background-image: url('milky-way-starry-sky-night-sky-star-956981.jpeg'); 
+        background-size: 100%;
+        height:250px;    
+    }
+    .logo{
+        position: relative;
+        background-image: url("logo-2078018__340.png");
+         height:100px;
+        width:100px; 
+        background-repeat: no-repeat;
+        left:5px; 
+        top:130px;
+        background-size:contain;
+    }
+    p{
+        position: relative;
+        left:110px;
+        top:30px;
+        color:bisque;
+        font-size:200%
+    }
+    p::first-line{
+        text-decoration:bold;
+        
+    }
+    p:last-child{
+        text-decoration:italic;
+    
+    }
+</style>
+<body>
+    <header>
+        <div class="header_img">
+        <div class ="logo"></div>
+        <p>Just Books<br><span><i>Live..</i></span></p>
+    </div>
+    </header>
+    
+    <!-- Total Amount<br> -->
+    <fieldset>
+        <legend>Plan Details</legend>
+    <form oninput='x.value=(parseInt(a.value) || 1)*(parseInt(b.value) || 1)'>
+
+            Plan:<input type = "list" list = "list1" name='a'>
+            <datalist id='list1'>
+                <option value=2>Two BooksPer Month</option>
+                <option value=4>Two BooksPer Month</option>
+            </datalist><br>
+            Duration:<input type="number" name='b'><br>
+
+    Total Amount: 
+    <output name='x' for='a b'></output> 
+</form>
+</fieldset>
+</body>
+</html>

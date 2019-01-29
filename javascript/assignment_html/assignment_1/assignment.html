@@ -11,22 +11,29 @@
     <form>
      FIRST NAME<br><input type="text" placeholder="Enter your first name" required><br>
      LAST NAME<br><input type="text" placeholder="Enter your last name" required><br>
-     BIRTH DATE<br><input="date" required><br>
+     BIRTH DATE<br><input type="date" required><br>
      GENDER<br><input type="text" list="list" required><br>
      <datalist id="list">
      <option>Male</option>
      <option>Female</option>
      <option>Others</option>    
      </datalist><br>
-     Email<br><input type="email" palceholder="Example@domain.com" required>
+     EMAIL<br><input type="email" palceholder="Example@domain.com" required>
      <fieldset><legend>Address</legend><br>
         Street Address<br><input type="text"><br>
         Street Address Line 2<br><input type="text"><br>
         city<br><input type="text"><br>
         state<br><input type="text"><br>
-        zip code<br><input type="text" pattern="[a-zA-Z]{2}[0-9]{4}"><br>
+        zip code<br><input type="text" pattern="^[a-zA-Z]{2}-[0-9]{4}" placeholder="xx-1111"><br>
         country<br><input type="text"><br>
-     </fieldset>   
+     </fieldset>
+     MEMEBERSHIP PLAN
+     <br><input type="text" list="list1">
+     <datalist id="list1">
+         <option>Basic plan</option>
+         <option>Platinum plan</option>    
+        </datalist>
+     <button type='submit'>Sign Up</button>   
      </form>
 </body>
 </html>
