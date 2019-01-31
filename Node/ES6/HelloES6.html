@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Document</title>
+    <script>
+        var a = 20;
+        let b = 50;
+        if(true){
+            let x= 10;
+            if(true){
+                let x = 100 ; //hiding the parent
+                console.log(x)
+            }
+        }
+        //console.log(x);
+        const PI = 3.14;
+        console.log(window.a)
+        console.log(window.b)// undefined
+
+       var Square = function(b){
+           return b*b;
+       }
+
+
+    //    OR 
+      
+
+        var square = b => b*b;
+
+        // Arrow functions
+        var cars = ["audi","BMW","ferrari"]
+        cars.forEach(function(car)
+        {
+            console.log(car)
+
+        });
+        cars.forEach(car=>console.log(car))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
