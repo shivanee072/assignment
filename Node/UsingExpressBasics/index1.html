@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    UserName:<input type="text" value= "">
+    Password:<input type="password" value = "">
+    <input type="button" value="submit">
+<script>
+    document.getElementsByTagName("input")[2].onclick = function(){
+    var obj = {"name":document.getElementsByTagName("input")[0].value,"password":document.getElementsByTagName("input")[1].value}
+    var xhttp = new XMLHttpRequest()
+    url = "http://localhost:5000/login"
+    xhttp.open("POST",url,true)
+    // xhttp.setRequestHeader("Content-type","application/json:charset=")             )
+   
+    xhttp.onreadystatechange = function(){
+    if(xhttp.status == 200 && xhttp.readyState == 4){
+        console.log(xhttp.responseText);
+        
+    }
+}
+xhttp.send(JSON.stringify(obj))
+    }
+</script>
+</body>
+</html>
