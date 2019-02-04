@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>  
+    <!-- when the response comes this file will be emitted,no such  file physically exists -->
+    <script>
+    var socket;
+    function Initialize(){
+        socket = io.connect(); 
+        // establishing connection
+
+        socket.on("messageForClient",(dataFromServer)=>{
+            console.log(dataFromServer)
+        })
+    }
+
+    function SendMessage(){
+        var dataFromTextBox = document.getElementById("textMessage").value
+        socket.emit("messageFromClient",dataFromTextBox)
+    }
+</script>
+</head>
+<body onload="Initialize()">
+    <h1>Using web sockets</h1>
+    Enter message :<input type="text" id="textMessage"/>
+    <input type="button" value="Send !" onclick="SendMessage()"
+    
+</body>
+</html>

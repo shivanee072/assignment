@@ -1,5 +1,6 @@
 
 
+
 var maxTime = 1000;
 function EvenNumberDoubler(theNumber,theCallBack){
     var waitTime = Math.floor(Math.random() * (maxTime+1))
@@ -17,7 +18,7 @@ function EvenNumberDoubler(theNumber,theCallBack){
 
 
 
-function Processresult(err,result){
+function Processresult(err,result){    // async call back function set aside by EvenNumberDoubler 
     if(err){
         console.log("Error :"+ err.message);
 

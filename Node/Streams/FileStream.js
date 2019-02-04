@@ -9,6 +9,6 @@ var fs = require('fs');
 // })
 //console.log("Program Ended!!!")
 var content = fs.readFileSync("Data.txt","UTF-8")
-console.log(content)
+console.log(content)  //may give buffered value s
 // console.log(content.toString())
 console.log("Program Ended !!!")
