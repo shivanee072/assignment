@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Scrollspy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        #bootstrap {
+            padding-top: 50px;
+            height: 500px;
+            color: snow;
+            background-color: red;
+        }
+
+        #angular {
+            padding-top: 50px;
+            height: 500px;
+            color: snow;
+            background-color: green;
+        }
+
+        #nodejs {
+            padding-top: 50px;
+            height: 500px;
+            color: snow;
+            background-color: blue;
+        }
+
+        #grunt {
+            padding-top: 50px;
+            height: 500px;
+            color: maroon;
+            background-color: yellow;
+        }
+
+        #gulp {
+            padding-top: 50px;
+            height: 500px;
+            color: maroon;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- 
+        data-spy="scroll"
+        data-target
+        data-offset="10"
+     -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#bootstrap">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#angular">Angular</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#nodejs">NodeJS</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Task Runners - Automation
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#grunt">Grunt</a>
+                    <a class="dropdown-item" href="#gulp">Gulp</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="bootstrap" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+        <h1>Bootstrap</h1>
+        <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications. It contains
+            HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components,
+            as well as optional JavaScript extensions. Unlike many web frameworks, it concerns itself with front-end development
+            only.
+        </p>
+    </div>
+    <div id="angular" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+        <h1>Angular</h1>
+        <p>Angular is a complete JavaScript-based open-source front-end
+            web application framework mainly maintained by Google and by a community of individuals and corporations to address
+            many of the challenges encountered in developing single-page applications. The JavaScript components complement
+            Apache Cordova, the framework used for developing cross-platform mobile apps. It aims to simplify both the development
+            and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and
+            model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications.</p>
+    </div>
+    <div id="nodejs" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+        <h1>Node JS</h1>
+        <p>Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of tools
+            and applications. Although Node.js is not a JavaScript framework,[3] many of its basic modules are written in
+            JavaScript, and developers can write new modules in JavaScript. The runtime environment interprets JavaScript
+            using Google's V8 JavaScript engine.Node.js has an event-driven architecture capable of asynchronous I/O. These
+            design choices aim to optimize throughput and scalability in Web applications with many input/output operations,
+            as well as for real-time Web applications (e.g., real-time communication programs and browser games).</p>
+    </div>
+    <div id="grunt" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+        <h1>Grunt</h1>
+        <p>Grunt is a JavaScript Task Runner, a tool used to automatically perform frequently used tasks such as minification,
+            compilation, unit testing, linting, etc. It uses a command-line interface to run custom tasks defined in a file
+            (known as a Gruntfile). Grunt was created by Ben Alman and is written in Node.js. It is distributed via npm.Presently,
+            there are more than five thousand plugins available in the Grunt ecosystem. Companies that use Grunt include
+            Adobe Systems, jQuery, Twitter, Mozilla, Bootstrap, Cloudant, Opera, WordPress, Walmart and Microsoft</p>
+    </div>
+    <div id="gulp" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+        <h1>Gulp</h1>
+        <p>gulp-task-runner registers the following tasks to gulp: minify html/php files via gulp-htmlmin support ejs template
+            via gulp-ejs compile sass files via gulp-sass minify css files via gulp-clean-css add prefixes automatically
+            via gulp-autoprefixer compile js files via browserify+babelify generate sourcemaps via gulp-sourcemaps minify
+            js files via gulp-uglify compress images via gulp-imagemin & imagemin-pngquant browser sync via browser-sync
+            generate sitemap.xml via gulp-sitemap
+            compile js files via browserify+babelify
+            generate sourcemaps via gulp-sourcemaps
+            minify js files via gulp-uglify
+            compress images via gulp-imagemin & imagemin-pngquant
+            browser sync via browser-sync
+            generate sitemap.xml via gulp-sitemap</p>
+    </div>
+
+</body>
+
+</html>

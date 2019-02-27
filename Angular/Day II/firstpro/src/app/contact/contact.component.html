@@ -1,0 +1,35 @@
+<div class="col-x6 col-sm col-md-6 col-lg-">
+  
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Cell</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of contacts,let i = index">
+        <td>{{c.name}}</td>
+        <td>{{c.email}}</td>
+        <td>{{c.cell}}</td>
+        <td>
+        <button type="button" class="btn btn-danger" (click)="delete(i)">delete</button>
+        </td>
+      </tr>
+      <tr>
+   <td><input type="text" name="nm" #nm key></td>
+        <td><input type="text" name="email"  #email key></td>
+        <td><input type="text" name="cell" #cell key></td> 
+        
+      </tr>
+    </tbody>
+  </table>
+    <p>
+ <button (click)="add(nm,email,cell)" type="button" class="btn btn-primary">Add>>></button>
+    </p>
+    <div>
+      {{msg}}
+    </div>
+    

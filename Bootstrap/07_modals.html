@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>Document</title>
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- 
+            The modal component is a dialog box/ popup window that is displayed
+            on top of the current page
+
+            .data-toggle="modal"
+            
+            .tabindex=-1 (to set the focus on that dialog box, by default)
+
+            .modal
+
+            .modal-dialog
+            .modal-content
+
+            .modal-header
+                .modal-title
+                button (HTML unicode &times;   other unicodes &reg; &copy;)
+               
+
+            .modal-body
+            .modal-footer
+                button
+
+            .data-dismiss="modal"
+         -->
+
+         <div class="container mt-3">
+            <button type="button" class="btn btn-primary"
+            data-toggle="modal" data-target="#myModal">
+                Click Me!
+            </button>
+         </div>
+
+         <!-- Modal -->
+         <div id="myModal" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Header</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        Some text in Modal body... Some text in Modal body... Some text in Modal body... 
+                        Some text in Modal body... Some text in Modal body... Some text in Modal body... 
+                        Some text in Modal body... Some text in Modal body... Some text in Modal body... 
+                        Some text in Modal body... Some text in Modal body... 
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"
+                        data-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div> 
+         </div>
+
+         
+
+        <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    </body>
+</html>

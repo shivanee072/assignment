@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries</title>
+    <style>
+        .wrapper{
+            border: 2px solid black;
+            padding: 1em;
+            margin-bottom:10px;
+        }
+
+        @media only screen and (max-width : 576px){
+            #div1{
+                background-color:blue;
+            }
+
+        }
+
+
+        @media only screen and (min-width : 768px) and (max-width : 992px){
+            #div2{
+                background-color: pink;
+            }
+        }
+
+
+        @media only screen and (min-width : 1200px){
+            #div3{
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" class="wrapper"> This div turns blue when screen width is less than 576 px</div>
+    <div id="div2" class="wrapper"> This div turns pink when screen width is between  than 768px and 992px</div>
+    <div id="div3" class="wrapper"> This div turns orange when screen width is greater  than 1200px</div>
+   
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        .col-content{
+            border: 1px solid white;
+            background-color:lightgray;
+            padding-top:6px;
+            padding-bottom:6px;
+        }
+    </style>
+   
+</head>
+<body>
+  <!-- 
+      B3: 4 tier architecture (xs, sm, md, lg)
+      B4: 5 tier architecture (xs, sm, md, lg, xl)
+
+      use containers - to wrap all the elements
+      fixed containers and fluid containers
+
+      row class
+      col classes to divide the row into diff columns
+      col-**-*  
+
+      ** - screen size - sm, md, lg, xl (if skipped: applicable for xs and above ie. all)
+      *  - how many cols to span  (if skipped: we will get columns with equal width)
+
+      12 cols in each row
+      (beyond 12 cols, the next column would be shown on next line)
+
+      e.g col-sm-6 (for small and above: 2 columns - each column occupying 6 cols)
+      e.g. col-lg-3 (for large and above: 4 columns - each column occupying 3 cols)
+
+
+   -->
+
+   <div class="container">
+        <!-- 4 cols in each column: 3 columns
+        medium and above: 3 columns
+        small and below (sm and xs): vertical stack
+        -->
+        <!-- <div class="row">
+            <div class="col-md-4 col-content">Col-md-1</div>
+            <div class="col-md-4 col-content">Col-md-2</div>
+            <div class="col-md-4 col-content">Col-md-3</div>
+        </div> -->
+   </div>
+
+   <div class="container-fluid">
+        <!-- 4 cols in each column: 3 columns
+        medium and above: 3 columns
+        small and below (sm and xs): vertical stack
+        -->
+        <!-- <div class="row">
+            <div class="col-md-4 col-content">Col-md-1</div>
+            <div class="col-md-4 col-content">Col-md-2</div>
+            <div class="col-md-4 col-content">Col-md-3</div>
+        </div> -->
+   </div>
+
+   <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1 col-content">Col-sm-1</div>
+            <div class="col-sm-1 col-content">Col-sm-2</div>
+            <div class="col-sm-1 col-content">Col-sm-3</div>
+            <div class="col-sm-1 col-content">Col-sm-4</div>
+            <div class="col-sm-1 col-content">Col-sm-5</div>
+            <div class="col-sm-1 col-content">Col-sm-6</div>
+            <div class="col-sm-1 col-content">Col-sm-7</div>
+            <div class="col-sm-1 col-content">Col-sm-8</div>
+            <div class="col-sm-1 col-content">Col-sm-9</div>
+            <div class="col-sm-1 col-content">Col-sm-10</div>
+            <div class="col-sm-1 col-content">Col-sm-11</div>
+            <div class="col-sm-1 col-content">Col-sm-12</div>
+        </div>
+   </div> -->
+
+   <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+            <div class="col-lg-1 col-content">Col-lg-1</div>
+        </div>
+   </div> -->
+
+   <!-- creating grid with equal column width using col: need not mention cols count
+       appli 
+-->
+   <!-- <div class="row">
+        <div class="col col-content">Column 1</div>
+        <div class="col col-content">Column 2</div>
+        <div class="col col-content">Column 3</div>
+        <div class="col col-content">Column 4</div>
+   </div> -->
+
+   <!-- <div class="row">
+        <div class="col-sm col-content">Column 1</div>
+        <div class="col-sm col-content">Column 2</div>
+        <div class="col-sm col-content">Column 3</div>
+        <div class="col-sm col-content">Column 4</div>
+   </div> -->
+
+   <!-- columns with unequal width: Just ensure that sum adds up to 12 -->
+   <!-- <div class="row">
+        <div class="col-md-4 col-content">column-md-4</div>
+        <div class="col-md-5 col-content">column-md-5</div>
+        <div class="col-md-3 col-content">column-md-3</div>
+   </div> -->
+
+   <!-- <div class="row">
+        <div class="col-md-4 col-content">column-md-4</div>
+        <div class="col-md-6 col-content">column-md-6</div>
+        <div class="col-md-3 col-content">column-md-3</div>
+   </div> -->
+
+   <!-- <div class="row">
+        <div class="col-md-4 col-content">column-md-4</div>
+        <div class="col-md-6 col-content">column-md-6</div>
+        <div class="col-md-1 col-content">column-md-1</div>
+   </div> -->
+
+
+   <!-- Mix and Match -->
+   <!-- <div class="row">
+        <div class="col-sm-3 col-md-6 col-xl-9 col-content">col</div>
+        <div class="col-sm-9 col-md-6 col-xl-3 col-content">col</div>
+   </div> -->
+
+   <!-- <div class="row">
+        <div class="col-6 col-sm-9  bg-success">col</div>
+        <div class="col-6 col-sm-3  bg-warning">col</div>
+   </div> -->
+
+   <!-- <div class="row">
+        <div class="col-sm-9  bg-success">col</div>
+        <div class="col-sm  bg-warning">col</div>
+   </div> -->
+
+    <div class="row">
+        <div class="col-5 col-lg-8  bg-success">col</div>
+        <div class="col-7 col-lg-4  bg-danger">col</div>
+   </div>
+
+</body>
+</html>

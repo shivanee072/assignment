@@ -1,0 +1,7 @@
+
+<ol>Topic List
+  <li *ngFor='let t of topics'>{{t}}</li>
+
+</ol>
+<input type="text" name="msg" #msg key>
+<button (click)="add(msg.value)">Add</button>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example of Bootstrap4 Carousel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .carousel {
+            background: #2f4357;
+            margin-top: 20px;
+        }
+
+        .carousel .carousel-item img {
+            margin: 0 auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Carousel - slideshow for cycling thru elements
+        e.g. pics, testimonials.
+     -->
+    
+    <div class="container">
+        <!-- 
+            carousel - creater the slideshow
+            slide - to add transition or animation effect to the slides
+            data-ride="carousel" to start animation on page load
+            carousel-indicators - 
+
+         -->
+
+        <div id="myCarousel" class="carousel slide"  
+        data-interval="3000" data-ride="carousel">
+
+            <!-- indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+          <!-- 
+              slides
+              carousel-inner: wrapper for all slides
+              carousel-item
+           -->
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./images/Bruce1.jpg" alt="First Slide" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>First Quote</h3>
+                        <p>"Adapt what is useful, reject what is useless, and add what is specifically your own."– Bruce Lee.</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="./images/Bruce3.jpg" alt="Second Slide" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Second Quote</h3>
+                        <p>“The key to immortality is first living a life worth remembering.”– Bruce Lee.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="./images/Bruce4.jpg" alt="Third Slide" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Third Quote</h3>
+                        <p>“Take things as they are. Punch when you have to punch. Kick when you have to kick.”– Bruce Lee.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/Bruce5.jpg" alt="Fourth Slide" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Fourth Quote</h3>
+                        <p>"As you think, so shall you become."– Bruce Lee.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

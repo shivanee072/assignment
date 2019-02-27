@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>Document</title>
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- 
+            default navbar: .navbar
+            navbar-expand-* (screensize): sm, md, ..
+
+            navbar-dark: darker background
+            background color: bg-primary, ...
+            fixed-top: navbar would be fixed on top
+
+            class="navbar-toggler"  (for button)
+            data-toggle="collapse"
+            data-target: "#navContent"
+            navbar-toggler-icon (hamburger icon)
+         -->
+
+         <div class="container mt-3">
+             <nav class="navbar navbar-expand-sm navbar-light bg-success fixed-top">
+                <button class="navbar-toggle" type="button" data-toggle="collapse"
+                data-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Brand Name -->
+                <a href="#" class="navbar-brand">Persistent</a>
+
+                <!-- links -->
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">JS</a>
+                        </li>
+                        
+                        <!-- Dropdown for Version -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Version</a>    
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Version1</a>
+                                    <a href="#" class="dropdown-item">Version2</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">Version3</a>
+                                </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <form class="form-inline">
+                    <input type="text" class="form-control">
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </form>
+
+             </nav>
+
+
+         </div>
+
+        <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    </body>
+</html>

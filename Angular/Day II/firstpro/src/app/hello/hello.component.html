@@ -1,0 +1,22 @@
+<body>
+    <div [hidden]="hide">
+<h2>  {{msg}}</h2>
+<h2>    {{loc}}</h2>
+<h2>{{schedule}}</h2>
+</div>
+<p><button [disabled]="isbuttondisabled" (click)="handleClick($event)">{{btn_msg}}</button></p>
+<p><button [style.color]="isSpecial ?'red':'green'">{{btn_msg}}</button></p>
+<p><button [style.background-color]="canSave ? 'cyan' :'grey'">{{btn_msg}}</button></p>
+<div>
+    <input type="text" name = "msg" #msg (keyup.enter)="show(msg.value)">
+    
+</div>
+<p>{{txt}}</p>
+<div [class.s1] = "canSave">
+    Some text...Some text...Some text...Some text...
+    Some text...Some text...Some text...Some text...
+    Some text...Some text...Some text...Some text...
+    Some text...Some text...Some text...Some text...
+</div>
+</body>
+
