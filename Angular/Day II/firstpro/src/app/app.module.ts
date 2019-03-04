@@ -9,13 +9,14 @@ import { HelloService } from 'src/app/hello/hello.service';
 import { ContactService } from 'src/app/contact/contact.service';
 import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AuthGuard } from 'src/app/auth.guard';
 
 
 const routes:Routes = [
   {path:'',component:HomeComponent,pathMatch:'full'},
   {path:'hello',component:HelloComponent},
   {path:'topic',component:TopicComponent},
-  {path:'contact',component:ContactComponent},
+  {path:'contact',component:ContactComponent,canActivate:[AuthGuard]},
   {path:'pagenotfound',component:PagenotfoundComponent},
   {path:'**',component:PagenotfoundComponent}
 ];
